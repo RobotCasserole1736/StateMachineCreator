@@ -50,6 +50,16 @@ const links = [
   { source: nodes[1], target: nodes[2], left: false, right: true, needsOffset: false}
 ];
 
+const inputs = [
+  { codeID: "myInput1", type:"double"},
+  { codeID: "myInput2", type:"boolean"},
+];
+
+const outputs = [
+  { codeID: "myOutput1", type:"double"},
+  { codeID: "myOutput2", type:"boolean"},
+];
+
 // init D3 force layout
 const force = d3.forceSimulation()
   .force('link', d3.forceLink().id((d) => d.id).distance(200))
@@ -416,3 +426,11 @@ d3.select(window)
   .on('keydown', keydown)
   .on('keyup', keyup);
 restart();
+
+function onSave(){
+  //TODO
+}
+
+function onLoad(){
+  //TODO
+}

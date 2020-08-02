@@ -38,7 +38,11 @@ function getWebviewContent(jsFile: vscode.Uri, cssFile: vscode.Uri) {
     <link rel="stylesheet" href="${cssFile}">
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+<button onclick="onSave()">Save</button>
+<button onclick="onLoad()">Load</button>
+<button onclick="onNewState()">New State</button>
+<br>
+
 </body>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="${jsFile}"></script>
